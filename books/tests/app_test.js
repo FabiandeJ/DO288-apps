@@ -34,8 +34,8 @@ describe('Books App routes test', () => {
       .get('/authors')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.include('James_Joyce');
-        done();
+        expect(res.text).to.include('James Joyce');
+	done();
       });
   });
 });
